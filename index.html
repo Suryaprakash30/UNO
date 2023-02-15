@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>UNO</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel=" https://colorzilla.com/gradient-editor/#cb60b3+0,db36a4+100 ">
+	</head>
+	<body>  
+		<div class="container">
+			<div class="content" id="content">
+				<div class="playerA" id="playerA"></div>
+				<!-- <span class="invalidCardChoosen" id="invalidCardChoosen" >Invalid Card</span >  -->
+				<div class="deckcontainer" id="deckcontainer">
+					<span id="colPic" class="colPic">
+						<label id="colLabel" class="colLabel">Choose Color:</label>
+						<button class="redButton" id="button" onclick="chooseColor('red')"></button>
+						<button class="blueButton" id="button" onclick="chooseColor('blue')"></button>
+						<button class="greenButton" id="button" onclick="chooseColor('green')"></button>
+						<button class="yellowButton" id="button" onclick="chooseColor('yellow')"></button>
+					</span>
+					<span class="deck"></span>
+					<span class="middeck" id="middeck"></span>
+					<span id="choosenCol" class="choosenCol">
+						<label id="colTitle" class="colTitle">Selected Color:</label>
+						<button class="selectedCol" id="selectedCol"></button>
+					</span>
+					<span class="pass" id="pass"><button onclick="computerturn()">Pass</button></span>
+					<span class="uno" id="uno"><button onclick="unoProceed()">UNO</button></span>
+				</div>
+				<div class="playerB" id="playerB"></div>
+			</div>
+			<script src="script1.js"></script>
+		</body>
+	</html>	
